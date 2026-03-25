@@ -115,7 +115,7 @@ That CSV folder is a secondary export location for many artifacts so they can be
 
 ## Safety and resilience design
 
-Two helper functions drive the script’s resilience:
+Two helper functions drive the script's resilience:
 
 ### `Invoke-SafeRun`
 Wraps each collection step in `try/catch`, so a single failing artifact does not stop the entire triage run.
@@ -480,7 +480,7 @@ Outputs:
 ## Browser and user activity artifacts
 
 ### `Get-ChromiumFiles`
-Searches under the user’s local app data for Chromium-based browser profile folders containing a valid SQLite `History` file.
+Searches under the user's local app data for Chromium-based browser profile folders containing a valid SQLite `History` file.
 
 Copies:
 - `Preferences`
@@ -795,7 +795,7 @@ That combination is exactly what you want in early-stage incident response.
 
 ---
 
-## Important implementation problems and caveats
+## Known issues and caveats
 
 This script is useful, but it is **not fully clean or production-safe as written**. There are a few important issues.
 
@@ -873,5 +873,3 @@ That means:
 - malware may react to collection
 
 That is normal for live response, but important to understand.
-
----

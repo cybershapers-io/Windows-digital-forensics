@@ -515,4 +515,4 @@ pm2 save
 
 ## License
 
-For internal DFIR and incident response use. Do not expose this dashboard to the public internet without authentication.
+For internal DFIR and incident response use. Recommend to not expose this dashboard to the public internet without authentication.
